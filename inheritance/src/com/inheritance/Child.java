@@ -23,7 +23,7 @@ package com.inheritance;
         return grade;
     }
 
-    void schoolName(){
+    public void schoolName(){
         System.out.println("school name is KLE");
     }
 

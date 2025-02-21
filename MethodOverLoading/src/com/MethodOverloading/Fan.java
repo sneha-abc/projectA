@@ -21,7 +21,8 @@ public class Fan {
         this.colour=colour;
     }
 
-    public String getVoltage(){
+    public String getVoltage()
+    {
         return voltage;
     }
     public int getNoOfWings(){

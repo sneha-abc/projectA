@@ -2,7 +2,7 @@ package com.Encapsulation;
 
 public class HeadPhone {
     private String brand;
-    private String color;
+    private String colour;
 
 
     public HeadPhone(String brand,String colour){
@@ -15,7 +15,7 @@ public class HeadPhone {
     }
 
     public String getColor() {
-        return color;
+        return colour;
 
     }
 

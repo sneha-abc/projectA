@@ -1,7 +1,7 @@
 package com.ab;
 
 public abstract class Animal {
-     // cant be private,protected, ,final
+     // cant be private,protected,final
     //can be public and default
 
 
