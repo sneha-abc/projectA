@@ -31,6 +31,15 @@ public class StreamRunner {
 
         countryDtos.stream().filter(dto->dto.getCountryCode()==91).forEach(c-> System.out.println(c));
 
+
+        System.out.println("............");
+
+        countryDtos.stream().map(country->country.getCountryCode()).sorted().forEach(str-> System.out.println(str));
+//optional
+        CountryDto minPopu= countryDtos.stream()
+                .max((c1,c2)->Long.compare(c1.getPopulation(),c2.getPopulation()))
+                .get();
+        System.out.println(minPopu);
        /* Collections.sort((ArrayList)countryDtos);
         for(CountryDto c:countryDtos)
     {
@@ -39,7 +48,7 @@ public class StreamRunner {
 
     //comparator
         System.out.println("===============================");
-        Comparator<CountryDto> comparator=(c1,c2)->Long.compare(c1.getPopulation(),c2.getPopulation());
+        Comparator<CountryDto> comparator=(c1,c2)->Long.compare(c2.getPopulation(),c2.getPopulation());
 
     Collections.sort((List)countryDtos,comparator);
 
