@@ -1,6 +1,9 @@
 package maps;
 
-public class DetailsDto {
+import java.io.Serializable;
+import java.util.Set;
+
+public class DetailsDto implements Serializable,Comparable {
     private int number_of_states;
     private int number_of_tourit_place;
     private int number_of_rivers;
@@ -36,5 +39,10 @@ public class DetailsDto {
 
     public void setNumber_of_rivers(int number_of_rivers) {
         this.number_of_rivers = number_of_rivers;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }

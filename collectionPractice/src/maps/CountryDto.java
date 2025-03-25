@@ -1,6 +1,8 @@
 package maps;
 
-public class CountryDto {
+import java.io.Serializable;
+
+public class CountryDto implements Serializable,Comparable {
     private int country_code;
     private String country_name;
     private long population;
@@ -46,5 +48,10 @@ public class CountryDto {
 
     public void setPresidentName(String presidentName) {
         this.president_name = presidentName;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }

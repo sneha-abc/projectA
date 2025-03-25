@@ -70,3 +70,4 @@ public class TreeMapExample {
         System.out.println(map);
     }
 }
+//in treemap we can not add null to key it thorws null pointer exception
