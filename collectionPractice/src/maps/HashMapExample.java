@@ -13,6 +13,7 @@ public class HashMapExample {
 
         System.out.println("To add the values and key=====================================");
         map.put(418,"Karnataka");
+        map.
         map.put(45,"mumbai");
         map.put(37,"maharashtra");
         map.put(4,"kerala");

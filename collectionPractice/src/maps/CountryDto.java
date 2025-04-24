@@ -1,6 +1,10 @@
 package maps;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class CountryDto implements Serializable,Comparable {
     private int country_code;
